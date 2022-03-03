@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <form
+      action="mailto:abhi01320@gmail.com"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <h1>Tell us something positive that happened to you today</h1>
+      <br />
+      <label><strong>Name: </strong></label>
+      <input type="text" id="name" placeholder="Name" /><br />
+      <label><strong>Email:</strong></label>
+      <input type="email" name="email" placeholder="@gmail.com" />
+      <br />
+      <label><strong>Password:</strong></label
+      ><input type="password" name="password" placeholder="password"/><br />
+      <label><strong>Date of birth:</strong></label
+      ><input type="date" /><br />
+      <label><strong>On a scale of 1-10,how good was it:</strong></label
+      ><input type="number" min="0" max="10" />
+      <br />
+      <label><strong>Where did it happen:</strong></label>
+      <select name="place" id="place">
+        <br />
+        <option value="At home">At home</option>
+        <option value="On my commute">On my commute</option>
+        <option value="At work">At work</option>
+        <option value="On the street">On the street</option>
+        <option value="Other">Other</option></select
+      ><br />
+      <label><strong>At what time of day did it happen?</strong></label><br />
+      <input type="radio" id="morning" name="time-of-day" value="morning" />
+      <label for="morning">Morning</label><br />
+      <input type="radio" id="afternoon" name="time-of-day" value="afternoon" />
+      <label for="afternoon">Afternoon</label>
+      <br />
+      <input type="radio" id="evening" name="time-of-day" value="evening" />
+      <label for="evening">Evening </label>
+      <br />
+      <label><strong>What emotions did you experience</strong></label><br />
+      <input type="checkbox" /><label for="Excited">Excited</label><br />
+      <input type="checkbox" /><label for="Humbled">Humbled</label><br />
+      <input type="checkbox" /><label for="Elated">Elated</label><br />
+      <input type="checkbox" /><label for="Loved">Loved</label><br />
+      <input type="checkbox" /><label for="Enthusiastic">Enthusiastic</label
+      ><br />
+      <label><strong>Please describe your positive experience</label></strong>
+      <br />
+      <textarea placeholder="Enter your experience" name="message"></textarea
+      ><br />
+      <label><strong>Add your memories</strong></label><input type="file" /><label
+        for="myfile"
+      ></label
+      ><br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
